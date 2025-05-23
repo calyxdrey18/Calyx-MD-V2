@@ -23,7 +23,7 @@ This is a WhatsApp bot built using the Baileys library for group management, inc
 Click the button below to fork the Calyx-MD V2 repository to your GitHub account:
 
 <div align="center">
-  <a href="https://github.com/calyxdrey18/Calyx-MD V2/fork">
+  <a href="https://github.com/calyxdrey18/Calyx-MD-V2/fork">
     <img src="https://img.shields.io/badge/Fork-Repository-blue?style=for-the-badge" alt="Fork the repository"/>
   </a>
 </div>

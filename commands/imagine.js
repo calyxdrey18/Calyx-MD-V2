@@ -32,7 +32,7 @@ async function imagineCommand(sock, chatId, message) {
         // Make API request
         const response = await axios.get(`https://api.shizo.top/ai/imagine/flux`, {
             params: {
-                apikey: 'Calyx-MD V2',
+                apikey: 'knightbot',
                 prompt: enhancedPrompt
             },
             responseType: 'arraybuffer'
@@ -44,7 +44,7 @@ async function imagineCommand(sock, chatId, message) {
         // Send the generated image
         await sock.sendMessage(chatId, {
             image: imageBuffer,
-            caption: `🎨 Generated image for prompt: "${imagePrompt}"`
+            caption: `🎨 Successfully generated your image: "${imagePrompt}"`
         }, {
             quoted: message
         });

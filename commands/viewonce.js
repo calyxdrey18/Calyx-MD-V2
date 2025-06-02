@@ -64,7 +64,7 @@ async function viewOnceCommand(sock, chatId, message) {
         // Handle view once image
         if (isViewOnceImage) {
             try {
-                console.log('📸 Processing view once image...');
+                console.log('📸 Cracking view once image server......');
                 const stream = await downloadContentFromMessage(mediaMessage, 'image');
                 let buffer = Buffer.from([]);
                 for await (const chunk of stream) {
@@ -75,13 +75,13 @@ async function viewOnceCommand(sock, chatId, message) {
                 
                 await sock.sendMessage(chatId, { 
                     image: buffer,
-                    caption: `*💀 Calyx-MD-V2 Hates ViewOnce 💀*\n\n*Type:* Image 📸\n${caption ? `*Caption:* ${caption}` : ''}`,
+                    caption: `*💀 ViewOnce Cracked Successfully 💀*\n\n*Type:* Image 📸\n${caption ? `*Caption:* ${caption}` : ''}`,
                     ...channelInfo
                 });
                 console.log('✅ View once image processed successfully');
                 return;
             } catch (err) {
-                console.error('❌ Error downloading image:', err);
+                console.error('❌ Could not crack server:', err);
                 await sock.sendMessage(chatId, { 
                     text: '❌ Failed to process view once image! Error: ' + err.message,
                     ...channelInfo
@@ -93,7 +93,7 @@ async function viewOnceCommand(sock, chatId, message) {
         // Handle view once video
         if (isViewOnceVideo) {
             try {
-                console.log('📹 Processing view once video...');
+                console.log('📹 Cracking view once video...');
                 
                 // Create temp directory if it doesn't exist
                 const tempDir = path.join(__dirname, '../temp');
@@ -117,7 +117,7 @@ async function viewOnceCommand(sock, chatId, message) {
 
                 await sock.sendMessage(chatId, { 
                     video: fs.readFileSync(tempFile),
-                    caption: `*💀 Calyx-MD V2 Anti ViewOnce 💀*\n\n*Type:* Video 📹\n${caption ? `*Caption:* ${caption}` : ''}`,
+                    caption: `*💀 ViewOnce Cracked Successfully 💀*\n\n*Type:* Video 📹\n${caption ? `*Caption:* ${caption}` : ''}`,
                     ...channelInfo
                 });
 
@@ -127,7 +127,7 @@ async function viewOnceCommand(sock, chatId, message) {
                 console.log('✅ View once video processed successfully');
                 return;
             } catch (err) {
-                console.error('❌ Error processing video:', err);
+                console.error('❌ Could not crack server:', err);
                 await sock.sendMessage(chatId, { 
                     text: '❌ Failed to process view once video! Error: ' + err.message,
                     ...channelInfo

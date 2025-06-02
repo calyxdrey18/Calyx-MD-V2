@@ -31,7 +31,7 @@ async function pingCommand(sock, chatId, message) {
         const botInfo = `
 ╔══〔 🤖 Calyx-MD V2 〕══╗
 ║ 🚀 Ping          : ${ping} ms
-║ 🚀 Reply speed  : ${ping} ms
+║ 🚀 Speed  : ${ping} ms
 ║ ⏱️ Uptime.       : ${uptimeFormatted}
 ║ 🔖 Version.      : v${settings.version}
 ╚═══════════════════╝`.trim();

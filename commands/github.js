@@ -2,13 +2,13 @@ async function githubCommand(sock, chatId) {
     const repoInfo = `*🤖 Calyx-MD V2*
 
 *📂 GitHub Repository:*
-https://github.com/calyxdrey18/Calyx-MD-V2
+https://github.com/caly----------/--------------------- >>This repository is private.Dm Owner to buy the script
 
 *📢 Official Channel:*
 https://www.youtube.com/@CalyxDrey
 
 *🔄 Official Telegram Channel*
-https://t.me/calyx_drey_hacks
+https://t.me/haxk_em
 
 _Star ⭐ the repository if you like the bot!_`;
 

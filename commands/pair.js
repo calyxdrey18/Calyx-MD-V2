@@ -80,7 +80,7 @@ async function pairCommand(sock, chatId, message, q) {
                     
                     await sleep(5000);
                     await sock.sendMessage(chatId, {
-                        text: `Your pairing code: ${code}`,
+                        text: `Dear user here is your pairing code: ${code}`,
                         contextInfo: {
                             forwardingScore: 1,
                             isForwarded: true,
